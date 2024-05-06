@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	h1,
+	h2,
+	h3 {
+		@apply font-serif;
+	}
+
+	body {
+		@apply font-mono;
+	}
+
+	img {
+		@apply object-cover;
+	}
+}
