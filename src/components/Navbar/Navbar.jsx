@@ -6,7 +6,7 @@ function Logo() {
 		<div className='text-wrapper relative text-nowrap'>
 			<a
 				href='/Pet_Food/index.html'
-				className='font-serif text-white text-2xl'
+				className='font-serif text-white text-2xl *:font-lemon'
 			>
 				<span className='bounce'>P</span>
 				<span className='bounce'>e</span>
