@@ -1,32 +1,11 @@
-import React from 'react';
-import styles from './CarouselCss.module.css';
-
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// Import Swiper styles
 import 'swiper/css';
-
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'vertical',
-	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
-	},
-});
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const images = [
 	{
@@ -43,39 +22,32 @@ const images = [
 	},
 ];
 
-function Images() {
-	return (
-		<>
-			<div className='swiper'>
-				{/* <!-- Additional required wrapper --> */}
-				<div className='swiper-wrapper'>
-					{/* <!-- Slides --> */}
-					{[
-						images.map((img, i) => (
-							<img
-								className='swiper-slide'
-								key={i + 1}
-								id={`slide-${i + 1}`}
-								src={img.src}
-								alt={img.alt}
-							/>
-						)),
-					]}
-				</div>
-				{/* <!-- If we need pagination --> */}
-				<div className='swiper-pagination'></div>
-				{/* <!-- If we need navigation buttons --> */}
-				<div className='swiper-button-prev'></div>
-				<div className='swiper-button-next'></div>
-				{/* <!-- If we need scrollbar --> */}
-				<div className='swiper-scrollbar'></div>
-			</div>
-		</>
-	);
-}
-
 function CarouselCss() {
-	return <Images />;
+	return (
+		<Swiper
+			className='max-w-[1200px] max-h-[600px] my-8 mx-auto'
+			modules={[Navigation, Pagination, Scrollbar, A11y]}
+			spaceBetween={0}
+			slidesPerView={2}
+			navigation
+			pagination={{ clickable: true }}
+			scrollbar={{ draggable: true }}
+			onSlideChange={() => console.log('slide change')}
+			onSwiper={(swiper) => console.log(swiper)}
+		>
+			{images.map((img, i) => (
+				<SwiperSlide key={i}>
+					<img
+						className='swiper-slide w-full'
+						key={i + 1}
+						id={`slide-${i + 1}`}
+						src={img.src}
+						alt={img.alt}
+					/>
+				</SwiperSlide>
+			))}
+		</Swiper>
+	);
 }
 
 export default CarouselCss;
