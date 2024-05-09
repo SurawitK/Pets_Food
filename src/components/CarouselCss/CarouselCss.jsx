@@ -1,11 +1,10 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/swiper-bundle.css';
 
 const images = [
 	{
@@ -24,19 +23,19 @@ const images = [
 
 function CarouselCss() {
 	return (
-		<Swiper
-			className='max-w-[1200px] max-h-[600px] my-8 mx-auto'
-			modules={[Navigation, Pagination, Scrollbar, A11y]}
-			spaceBetween={0}
-			slidesPerView={2}
-			navigation
-			pagination={{ clickable: true }}
-			scrollbar={{ draggable: true }}
-			onSlideChange={() => console.log('slide change')}
-			onSwiper={(swiper) => console.log(swiper)}
+		<swiper-container
+			className='max-w-[1200px] mx-auto max-h-[600px]'
+			slides-per-view='1'
+			speed='500'
+			loop='true'
+			css-mode='true'
+			mousewheel-force-to-axis='true'
+			navigation='true'
+			pagination='true'
+			scrollbar='true'
 		>
 			{images.map((img, i) => (
-				<SwiperSlide key={i}>
+				<swiper-slide key={i}>
 					<img
 						className='swiper-slide w-full'
 						key={i + 1}
@@ -44,9 +43,9 @@ function CarouselCss() {
 						src={img.src}
 						alt={img.alt}
 					/>
-				</SwiperSlide>
+				</swiper-slide>
 			))}
-		</Swiper>
+		</swiper-container>
 	);
 }
 
