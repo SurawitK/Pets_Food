@@ -1,9 +1,10 @@
+import { useRef, useEffect } from 'react';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
 register();
-import { Navigation, Pagination } from 'swiper/modules';
 
+import 'swiper/css/bundle';
 import 'swiper/swiper-bundle.css';
 
 const images = [
@@ -22,8 +23,21 @@ const images = [
 ];
 
 function CarouselCss() {
+	const swiperElRef = useRef();
+	useEffect(() => {
+		// listen for Swiper events using addEventListener
+		swiperElRef.current.addEventListener('swiperprogress', (e) => {
+			const [swiper, progress] = e.detail;
+			console.log({ swiper, progress });
+		});
+
+		swiperElRef.current.addEventListener('swiperslidechange', (e) => {
+			console.log({ e }, 'slide changed');
+		});
+	}, []);
 	return (
 		<swiper-container
+			ref={swiperElRef}
 			className='max-w-[1200px] mx-auto max-h-[600px]'
 			slides-per-view='1'
 			speed='500'
@@ -32,6 +46,7 @@ function CarouselCss() {
 			mousewheel-force-to-axis='true'
 			navigation='true'
 			pagination='true'
+			pagination-clickable='true'
 			scrollbar='true'
 		>
 			{images.map((img, i) => (
