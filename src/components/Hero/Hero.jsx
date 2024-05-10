@@ -3,7 +3,7 @@ import styles from "./Hero.module.css"; */
 
 function Hero() {
 	return (
-		<section>
+		<section className='pt-6 md:pt-0'>
 			<div className='relative mt-3 md:mt-12 2xl:-mt-60 min-[2560px]:-mt-48'>
 				<img
 					className='w-full mx-auto bg-center bg-no-repeat'
@@ -11,7 +11,7 @@ function Hero() {
 					alt='Dog'
 				/>
 				<div className='flex flex-col text-center text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-					<h1 className='mb-1 lemon lg:text-8xl text-center md:text-5xl md:hidden text-nowrap'>
+					<h1 className='mb-1 lemon min-[500px]:text-3xl lg:text-8xl text-center md:text-5xl md:hidden text-nowrap'>
 						Cats and Dogs Food
 					</h1>
 					<h1 className='mb-[2rem] lemon lg:text-8xl text-center md:text-5xl md:block hidden text-nowrap'>

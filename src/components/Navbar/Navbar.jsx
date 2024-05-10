@@ -49,6 +49,53 @@ function Navbar() {
 		);
 	}
 
+	function Destinations() {
+		return (
+			<>
+				<li>
+					<a
+						href='#'
+						className='underline underline-offset-4'
+					>
+						Home
+					</a>
+				</li>
+				<li>
+					<a
+						href='#'
+						className='hover:underline underline-offset-4'
+					>
+						Products
+					</a>
+				</li>
+				<li>
+					<a
+						href='#'
+						className='hover:underline underline-offset-4'
+					>
+						About Us
+					</a>
+				</li>
+				<li>
+					<a
+						href='#'
+						className='hover:underline underline-offset-4'
+					>
+						Contact
+					</a>
+				</li>
+				<li>
+					<a
+						href='#'
+						className='hover:underline underline-offset-4'
+					>
+						Sign In
+					</a>
+				</li>
+			</>
+		);
+	}
+
 	function MobileNav() {
 		return (
 			<nav
@@ -84,46 +131,7 @@ function Navbar() {
 							/>
 						</svg>
 					</div>
-					<li>
-						<a
-							href='#'
-							className='underline underline-offset-4'
-						>
-							Home
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline underline-offset-4'
-						>
-							Products
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline underline-offset-4'
-						>
-							About Us
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline underline-offset-4'
-						>
-							Contact
-						</a>
-					</li>
-					<li>
-						<a
-							href='#'
-							className='hover:underline underline-offset-4'
-						>
-							Sign In
-						</a>
-					</li>
+					<Destinations />
 				</ul>
 			</nav>
 		);
@@ -132,46 +140,7 @@ function Navbar() {
 	function MediumNav() {
 		return (
 			<ul className='hidden md:flex gap-8 md:gap-8 text-white justify-center items-center text-nowrap font-mono text-lg md:text-base ml-auto min-[2560px]:ml-0'>
-				<li>
-					<a
-						href='#'
-						className='underline underline-offset-4'
-					>
-						Home
-					</a>
-				</li>
-				<li>
-					<a
-						href='../index_og.html'
-						className='hover:underline underline-offset-4'
-					>
-						Products
-					</a>
-				</li>
-				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
-						About Us
-					</a>
-				</li>
-				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
-						Contact
-					</a>
-				</li>
-				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
-						Sign In
-					</a>
-				</li>
+				<Destinations />
 				<li>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
