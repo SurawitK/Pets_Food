@@ -1,8 +1,23 @@
-import React from 'react';
+// import React from 'react';
 import styles from './Footer.module.css';
 
 function Footer() {
-	return (<div className='text-7xl text-orange-500'>Footer</div>);
+	const img = 'https://source.unsplash.com/random';
+	return (
+		<div className={styles.abc}>
+			Footer
+			<button
+				style={{
+					color: 'green',
+					padding: '20px',
+					border: '1px solid',
+					backgroundImage: `url(${img})`,
+				}}
+			>
+				Click meh!
+			</button>
+		</div>
+	);
 }
 
 export default Footer;
