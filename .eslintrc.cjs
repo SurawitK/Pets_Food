@@ -12,6 +12,7 @@ module.exports = {
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
   rules: {
+    "jsx-quotes": ["error", "prefer-single"], // Enforce single quotes
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",
