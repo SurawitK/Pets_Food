@@ -1,16 +1,17 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Carousel from './components/Carousel/Carousel';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+
 
 function App() {
 	return (
 		<>
 			<Navbar />
 			<Hero />
-			<Carousel />
-			<Footer />
+			<Gallery />
+			{/* <Footer /> */}
 		</>
 	);
 }
