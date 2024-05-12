@@ -4,7 +4,6 @@ import styles from "./Gallery.module.css";
 function Gallery() {
   return (
     <div className="m-2 grid grid-rows-2 grid-cols-2 grid-flow-row gap-4 auto-rows-fr">
-      {/* Commit มาเลย 4แปป */}
       <div className="col-span-full row-span-1 md:row-span-2 overflow-hidden">
         <div className="bg-white overflow-hidden rounded-lg">
           <img
