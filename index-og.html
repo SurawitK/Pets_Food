@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Pet_Food/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <title>Pet Shop</title>
+  </head>
+  <body class="box-border ubuntu-mono-regular text-slate-800">
+    <header class="nav-wrapper relative">
+      <nav class="grid grid-cols-2 px-8 py-4 items-center bg-rose-400 w-full">
+        <div class="text-wrapper relative">
+          <a href="/Pet_Food/index.html" class="lemon text-white text-4xl"
+            ><span class="bounce" style="--i: 1">P</span
+            ><span class="bounce" style="--i: 2">e</span
+            ><span class="bounce" style="--i: 3">t</span
+            ><span class="bounce" style="--i: 4">&nbsp;</span
+            ><span class="bounce" style="--i: 5">F</span
+            ><span class="bounce" style="--i: 6">o</span
+            ><span class="bounce" style="--i: 7">o</span
+            ><span class="bounce" style="--i: 8">d</span>
+          </a>
+        </div>
+        <ul class="ml-auto md:hidden">
+          <li><a href="#" class="text-white">Sign In</a></li>
+        </ul>
+        <ul
+          class="hidden md:flex gap-8 text-white justify-center items-center text-nowrap ubuntu-mono-regular text-lg ml-auto">
+          <li>
+            <a href="/Pet_Food/index.html" class="underline underline-offset-4"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">Products</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">Sign In</a>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="lg:w-6 lg:h-6 hover:scale-125 transition-all">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      class="pt-24 bg-[left_10rem_bottom_-11rem] bg-[#f0f0f0] bg-no-repeat h-[65rem] bg-[url('https://images.unsplash.com/photo-1597633425046-08f5110420b5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+      <div class="lg:ml-72 flex flex-col h-full lg:items-start text-6xl">
+        <h1 class="lg:mt-40 mb-[2rem] lemon lg:text-8xl text-white text-center">
+          Cats and <br class="hidden lg:inline-block" />Dogs Food
+        </h1>
+        <h2 class="ml-12 mb-[2rem] ubuntu-mono-regular text-3xl text-gray-800">
+          Good for Pet, Good for Owner
+        </h2>
+        <div class="flex flex-row w-1/3 justify-evenly ubuntu-mono-bold">
+          <a
+            href="#"
+            class="bg-transparent text-rose-400 border-solid border-rose-400 border-4 py-4 px-16 rounded-md text-xl font-bold transition-[box-shadow_300ms_ease-in-out,_color_300ms_ease-in-out] hover:shadow-[0_0_40px_40px_rgb(190,18,60)_inset] hover:border-rose-700 hover:text-white duration-500"
+            >VIEW MORE</a
+          >
+          <a
+            href="#"
+            class="bg-red-400 text-white py-4 px-16 border-4 border-solid border-rose-400 rounded-md text-xl font-bold hover:bg-rose-700 hover:border-rose-700 transition-all duration-500"
+            >REGISTER</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="my-24 text-gray-800 w-4/5 mx-auto">
+      <div class="flex justify-center mb-8 items-center text-center">
+        <h2 class="text-2xl uppercase">
+          check out our <br />
+          <span class="font-bold text-4xl">all-natural</span>
+          <span class="text-4xl">product</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-4 w-3/4 m-auto auto-rows-1 gap-3">
+        <div class="bg-slate-100 col-span-2 col-start-1 flex flex-col">
+          <h3 class="text-3xl mt-4 ml-4 font-bold">TOYS</h3>
+          <p class="text-base ml-4 text-slate-600">
+            Various toys for you loved ones
+          </p>
+          <div class="my-8 mx-8">
+            <div class="relative my-0 mx-auto">
+              <div
+                class="flex flex-row w-full aspect-[1/1] snap-mandatory snap-x overflow-x-hidden scroll-smooth shadow-[0_1.5rem_3rem_-0.75rem_hsla(0,0,0,0.25)] rounded-lg">
+                <img
+                  id="slide_1"
+                  class="flex-[1_1_50%] snap-start object-cover"
+                  src="img/dog_toys_1.jpg"
+                  alt="Dogs" />
+                <img
+                  id="slide_2"
+                  class="flex-[1_1_50%] snap-start object-cover"
+                  src="img/pink_dog_toy.jpg"
+                  alt="Cat" />
+                <img
+                  id="slide_3"
+                  class="flex-[1_1_50%] snap-start object-cover"
+                  src="img/cat_toys_4.jpg"
+                  alt="Dog" />
+              </div>
+              <div
+                class="slider-nav flex gap-4 absolute bottom-5 left-1/2 translate-x--2/4 z-[1] ml-[-30px]">
+                <a
+                  href="#slide_1"
+                  class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+                <a
+                  href="#slide_2"
+                  class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+                <a
+                  href="#slide_3"
+                  class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-rose-400 product-tall col-span-1 col-start-3 flex flex-col text-white">
+          <h3 class="text-3xl ml-4 mt-auto font-bold">DOG TREATS</h3>
+          <p class="text-base ml-4">Organic food for your pets</p>
+          <img
+            class="max-w-full rounded-md mt-2 mb-auto mx-5 border-4 border-solid border-white hover:scale-[1.05] transition-all duration-[300ms]"
+            src="img/dog_treat_2.jpg"
+            alt="Dog treats" />
+        </div>
+        <!-- Short Product 1 -->
+        <div class="bg-slate-100 col-span-1 col-start-4 flex flex-col">
+          <h3 class="text-3xl mt-4 ml-4 font-bold">JERKYS</h3>
+          <p class="text-base ml-4 text-slate-500">real meat. no fillers.</p>
+          <img
+            class="max-w-full rounded-md mx-auto my-5 border-4 border-solid border-white hover:scale-110 transition-all duration-[300ms]"
+            src="img/jerky_3.jpg"
+            alt="jerkys" />
+        </div>
+        <!-- Short Product 2 -->
+        <!--  <div class="bg-slate-100 col-span-1 col-start-4 flex flex-col">
+          <h3 class="text-3xl mt-4 ml-4 font-bold">CAT TREATS</h3>
+          <p class="text-base ml-4 text-slate-500">for your little furball.</p>
+          <img
+            class="max-w-full size-3/4 rounded-md mx-auto my-5 border-4 border-solid border-white hover:scale-110 transition-all duration-[300ms]"
+            src="img/cat_treat_1.jpg"
+            alt="Cat treats"
+          />
+        </div> -->
+      </div>
+    </section>
+
+    <div class="flex justify-center mb-8 items-center text-center">
+      <h2 class="text-2xl uppercase">
+        check out our v.2 <br />
+        <span class="font-bold text-4xl">all-natural</span>
+        <span class="text-4xl">product</span>
+      </h2>
+    </div>
+    <div class="section gallery">
+      <div
+        class="grid grid-cols-kevin lg:grid-cols-4 bg-slate-100 gap-4 mx-auto px-16">
+        <div class="grid grid-cols-subgrid">
+          <h3 class="text-3xl font-bold">TOYS</h3>
+          <p class="text-base text-slate-600">
+            Various toys for you loved ones
+          </p>
+          <img
+            class="w-full rounded-md hover:scale-[1.05] transition-all duration-[300ms]"
+            src="img/dog_toys_1.jpg"
+            alt="Dogs" />
+        </div>
+        <div class="grid grid-cols-subgrid bg-rose-400 text-white">
+          <h3 class="text-3xl ml-4 mt-auto font-bold">DOG TREATS</h3>
+          <p class="text-base ml-4">Organic food for your pets</p>
+          <img
+            class="max-w-full rounded-md hover:scale-[1.05] transition-all duration-[300ms]"
+            src="img/dog_treat_2.jpg"
+            alt="Dog treats" />
+        </div>
+        <div class="grid grid-cols-subgrid">
+          <h3 class="text-3xl ml-4 mt-auto font-bold">JERKYS</h3>
+          <p class="text-base ml-4">Real meat no fillers.</p>
+          <img
+            class="max-w-full rounded-md hover:scale-[1.05] transition-all duration-[300ms]"
+            src="img/jerky_3.jpg"
+            alt="Dog treats" />
+        </div>
+        <div class="grid grid-cols-subgrid">
+          <h3 class="text-3xl ml-4 mt-auto font-bold">CAT TREATS</h3>
+          <p class="text-base ml-4">smol treat for your little furball.</p>
+          <img
+            class="max-w-full rounded-md hover:scale-[1.05] transition-all duration-[300ms]"
+            src="img/cat_treat_1.jpg"
+            alt="Dog treats" />
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-slate-100 my-24">
+      <div class="grid grid-cols-2 w-[50%] mx-auto p-20 gap-24">
+        <div class="overflow-hidden rounded-lg">
+          <img
+            class="w-[350px] rounded-lg hover:scale-[115%] overflow-hidden transition-all"
+            src="https://images.unsplash.com/photo-1561948955-570b270e7c36?q=80&w=2701&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Cat Face" />
+        </div>
+        <div class="grid content-center relative">
+          <h3
+            class="text-2xl font-bold uppercase underline decoration-pink-500 decoration-wavy decoration-2">
+            about us
+          </h3>
+          <h2 class="text-4xl font-bold uppercase">
+            proudly raised,<br />grown &amp; produced <br /><span
+              class="text-red-700"
+              >in thailand</span
+            >
+          </h2>
+          <p class="my-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            possimus voluptates debitis eum doloribus totam ut numquam vero
+            repellendus ipsam!
+          </p>
+          <a
+            href="#"
+            class="text-center text-xl font-bold text-white uppercase bg-rose-400 rounded-md px-10 py-4 w-fit hover:bg-rose-700 hover:border-rose-700 transition-all duration-500"
+            >Discover who we are</a
+          >
+          <div
+            class="absolute inset-[0_0_auto_auto] inline-block bg-gray-500 p-4 rounded-full w-fit hover:scale-125 transition-all duration-[300ms]">
+            <svg
+              fill="white"
+              class="h-[30px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0H133.9c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0H487.4C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-24 mx-8">
+      <div class="slider-wrapper relative my-0 mx-auto">
+        <div
+          class="slider flex w-full aspect-[2/1] snap-mandatory snap-x overflow-x-hidden scroll-smooth shadow-[0_1.5rem_3rem_-0.75rem_hsla(0,0,0,0.25)] rounded-lg">
+          <img
+            id="slide-1"
+            class="flex-[1_0_100%] snap-start object-cover"
+            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Dogs" />
+          <img
+            id="slide-2"
+            class="flex-[1_0_100%] snap-start object-cover"
+            src="https://images.unsplash.com/photo-1562248852-58987553bd46?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Cat" />
+          <img
+            id="slide-3"
+            class="flex-[1_0_100%] snap-start object-cover"
+            src="https://images.unsplash.com/photo-1519120430-a7d2287c986a?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Dog" />
+        </div>
+
+        <!-- 1080p ml-[-30px] -->
+        <div
+          class="slider-nav flex gap-4 absolute bottom-5 left-1/2 translate-x--2/4 z-[1] ml-[-30px]">
+          <a
+            href="#slide-1"
+            class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+          <a
+            href="#slide-2"
+            class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+          <a
+            href="#slide-3"
+            class="w-2 h-2 rounded-1/2 rounded-[50%] bg-white opacity-75 transition-[opacity_ease_250ms] hover:opacity-100"></a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-slate-200 grid grid-cols-[0.1fr_0.8fr_1fr_0.1fr] mt-24 px-20 py-32 gap-32">
+      <div class="flex flex-col gap-4 col-start-2">
+        <h2 class="text-3xl uppercase">
+          <span
+            class="underline decoration-pink-500 decoration-wavy decoration-2"
+            >what are some</span
+          >
+          <br />
+          <span class="text-6xl font-bold"
+            >words <span class="ml-[-1rem]">about</span> <br />
+            our <span class="ml-[-1rem]">products</span></span
+          >
+        </h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis odit
+          nostrum molestiae totam eaque. Numquam laborum cupiditate magni
+          accusamus praesentium!
+        </p>
+        <div class="overflow-hidden rounded-md">
+          <img
+            src="https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?q=80&w=2584&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="stick"
+            class="my-auto rounded-md hover:scale-125 transition-all duration-[300ms]" />
+        </div>
+      </div>
+      <div class="flex flex-row gap-12 col-start-3">
+        <div class="flex flex-col gap-5">
+          <img
+            class="h-48 rounded-md hover:scale-110 transition-all duration-[300ms]"
+            src="https://plus.unsplash.com/premium_photo-1707093169504-206eeb29e157?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Nobita" />
+          <h3 class="font-bold my-4 text-2xl">
+            Nobita, <span class="font-normal">Student</span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+            voluptatibus, aut in iure ratione saepe ut? Exercitationem nobis
+            quas ullam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+            voluptatibus, aut in iure ratione saepe ut? Exercitationem nobis
+            quas ullam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+            voluptatibus, aut in iure ratione saepe ut? Exercitationem nobis
+            quas ullam.
+          </p>
+        </div>
+        <div class="flex flex-col gap-5">
+          <img
+            class="h-48 rounded-md hover:scale-110 transition-all duration-[300ms]"
+            src="https://images.unsplash.com/photo-1641521218916-6b404f676ea8?q=80&w=2612&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Doraemon" />
+          <h3 class="font-bold my-4 text-2xl">
+            Doraemon, <span class="font-normal">Robot</span>
+          </h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis odit
+            nostrum molestiae totam eaque. Numquam laborum cupiditate magni
+            accusamus praesentium!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis odit
+            nostrum molestiae totam eaque. Numquam laborum cupiditate magni
+            accusamus praesentium!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis odit
+            nostrum molestiae totam eaque. Numquam laborum cupiditate magni
+            accusamus praesentium!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-lime-300">
+      <div class="mx-auto text-center">
+        <h3>are you ready to</h3>
+        <h2>read our blog</h2>
+      </div>
+      <div class="grid grid-cols-2">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1692906456159-f93a6f3df407?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Husky" />
+          <h4>5 meals you should prepare to your best friend</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <div class="grid grid-cols-2">
+            <img
+              src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Cute puppy" />
+            <div>
+              <p>Posted Today</p>
+              <h4>why should you adopt a cute puppy&quest;</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit ut repellat, voluptates earum unde minus esse
+                veniam at non placeat optio laboriosam ipsum iure recusandae!
+              </p>
+              <a href="#">Read More &gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#">read more stories</a>
+    </section>
+
+    <footer class="bg-slate-100">
+      <div
+        class="w-[75%] grid grid-cols-[0.75fr_0.45fr_0.75fr_0.45fr] gap-8 px-40 py-20 mx-auto">
+        <div>
+          <h4 class="pb-3 font-bold text-2xl uppercase text-amber-900">
+            Dog Treats
+          </h4>
+          <p class="text-pretty text-md text-slate-500">
+            Providing the finest quality ingredients specially formulated for
+            your dog.
+          </p>
+        </div>
+        <div>
+          <h5 class="pb-3 font-bold text-xl uppercase">LINK</h5>
+          <ul class="grid gap-y-2 text-slate-600">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="pb-3 font-bold text-xl uppercase">Interests</h5>
+          <ul class="grid gap-y-2 text-slate-600">
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="pb-3 font-bold text-xl uppercase">Contact</h5>
+          <ul class="grid gap-y-2 text-slate-600">
+            <li><a href="#">Dog Food</a></li>
+            <li><a href="#">Bankok</a></li>
+            <li><a href="mailto: dog_food@gmail.com">dog_food@gmail.com</a></li>
+            <li><a href="tel:+6612345678">12345678</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
