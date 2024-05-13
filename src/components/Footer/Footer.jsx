@@ -1,16 +1,16 @@
 // import React from 'react';
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
 
 function Footer() {
-	const img = 'https://source.unsplash.com/random';
+	const img = "https://source.unsplash.com/random";
 	return (
 		<div className={styles.abc}>
 			Footer
 			<button
 				style={{
-					color: 'green',
-					padding: '20px',
-					border: '1px solid',
+					color: "green",
+					padding: "20px",
+					border: "1px solid",
 					backgroundImage: `url(${img})`,
 				}}
 			>

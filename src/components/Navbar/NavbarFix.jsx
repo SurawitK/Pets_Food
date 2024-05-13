@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import { motion } from 'framer-motion';
 
 // @bm Logo
@@ -25,19 +25,19 @@ function Logo() {
 // @bm MobileNav
 function MobileNav({ isOpen, handler }) {
 	const mobileNavRef = React.useRef();
-	const classes = isOpen ? '' : '';
+	const classes = isOpen ? "" : "";
 	return (
 		<nav
 			ref={mobileNavRef}
 			className={
-				'mobile-nav absolute top-0 inset-x-0 flex items-center justify-center h-dvh mx-auto w-full -translate-x-full transition-all duration-[600ms] opacity-0 md:hidden bg-white/50 backdrop-blur'
+				"mobile-nav absolute top-0 inset-x-0 flex items-center justify-center h-dvh mx-auto w-full -translate-x-full transition-all duration-[600ms] opacity-0 md:hidden bg-white/50 backdrop-blur"
 			}
 		>
 			<ul className='flex items-center justify-between flex-col gap-4 *:p-4'>
 				<div
 					className='absolute right-0 top-0'
 					onClick={() => {
-						console.log('x click');
+						console.log("x click");
 						// mobileNavRef.current.classList.toggle('opacity-0');
 						// mobileNavRef.current.classList.toggle('-translate-x-full');
 						// mobileNavRef.current.classList.toggle('translate-x-0');
@@ -65,11 +65,11 @@ function MobileNav({ isOpen, handler }) {
 	);
 }
 
-// @bm Hambergur
-function Hambergur({ isOpen }) {
+// @bm Hamburger
+function Hamburger({ isOpen }) {
 	const hambergurRef = React.useRef();
-	const classes = '';
-	const initialClasees = '';
+	const classes = "";
+	const initialClasees = "";
 	return (
 		<ul className='ml-auto md:hidden'>
 			<li>
@@ -78,7 +78,7 @@ function Hambergur({ isOpen }) {
 					className='text-white'
 					ref={hambergurRef}
 					onClick={() => {
-						console.log('bar click');
+						console.log("bar click");
 						// mobileNavRef.current.classList.toggle('opacity-0');
 						// mobileNavRef.current.classList.toggle('-translate-x-full');
 						// mobileNavRef.current.classList.toggle('translate-x-0');
@@ -97,42 +97,27 @@ function Destinations() {
 	return (
 		<>
 			<li>
-				<a
-					href='#'
-					className='underline underline-offset-4'
-				>
+				<a href='#' className='underline underline-offset-4'>
 					Home
 				</a>
 			</li>
 			<li>
-				<a
-					href='#'
-					className='hover:underline underline-offset-4'
-				>
+				<a href='#' className='hover:underline underline-offset-4'>
 					Products
 				</a>
 			</li>
 			<li>
-				<a
-					href='#'
-					className='hover:underline underline-offset-4'
-				>
+				<a href='#' className='hover:underline underline-offset-4'>
 					About Us
 				</a>
 			</li>
 			<li>
-				<a
-					href='#'
-					className='hover:underline underline-offset-4'
-				>
+				<a href='#' className='hover:underline underline-offset-4'>
 					Contact
 				</a>
 			</li>
 			<li>
-				<a
-					href='#'
-					className='hover:underline underline-offset-4'
-				>
+				<a href='#' className='hover:underline underline-offset-4'>
 					Sign In
 				</a>
 			</li>
@@ -176,14 +161,8 @@ function Navbar() {
 			{/* <!-- 2xl should become 1 row and span all --> */}
 			<nav className='grid grid-cols-2 min-w-[300px] md:grid-cols-[0.5fr_1fr] min-[2560px]:grid-cols-2 px-8 md:px-4 py-4 items-center bg-rose-400 min-[2560px]:px-96 min-[2560px]:justify-items-center md:justify-between md:gap-4 relative z-10'>
 				<Logo />
-				<Hambergur
-					isOpen={isOpen}
-					handler={setIsOpen}
-				/>
-				<MobileNav
-					isOpen={isOpen}
-					handler={setIsOpen}
-				/>
+				<Hamburger isOpen={isOpen} handler={setIsOpen} />
+				<MobileNav isOpen={isOpen} handler={setIsOpen} />
 				<MediumNav />
 			</nav>
 		</header>

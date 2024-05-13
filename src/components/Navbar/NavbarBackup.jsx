@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import { motion } from 'framer-motion';
 
 function Logo() {
@@ -35,11 +35,11 @@ function Navbar() {
 						className='text-white toggle-nav'
 						ref={barRef}
 						onClick={() => {
-							console.log('bar click');
-							navRef.current.classList.toggle('opacity-0');
-							navRef.current.classList.toggle('-translate-x-full');
-							navRef.current.classList.toggle('translate-x-0');
-							barRef.current.classList.add('hidden');
+							console.log("bar click");
+							navRef.current.classList.toggle("opacity-0");
+							navRef.current.classList.toggle("-translate-x-full");
+							navRef.current.classList.toggle("translate-x-0");
+							barRef.current.classList.add("hidden");
 						}}
 					>
 						<i className='fa-sharp fa-solid fa-bars'></i>
@@ -53,42 +53,27 @@ function Navbar() {
 		return (
 			<>
 				<li>
-					<a
-						href='#'
-						className='underline underline-offset-4'
-					>
+					<a href='#' className='underline underline-offset-4'>
 						Home
 					</a>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
+					<a href='#' className='hover:underline underline-offset-4'>
 						Products
 					</a>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
+					<a href='#' className='hover:underline underline-offset-4'>
 						About Us
 					</a>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
+					<a href='#' className='hover:underline underline-offset-4'>
 						Contact
 					</a>
 				</li>
 				<li>
-					<a
-						href='#'
-						className='hover:underline underline-offset-4'
-					>
+					<a href='#' className='hover:underline underline-offset-4'>
 						Sign In
 					</a>
 				</li>
@@ -101,7 +86,7 @@ function Navbar() {
 			<nav
 				ref={navRef}
 				className={
-					'mobile-nav absolute top-0 inset-x-0 flex items-center justify-center h-dvh mx-auto w-full -translate-x-full transition-all duration-[600ms] opacity-0 md:hidden bg-white/50 backdrop-blur'
+					"mobile-nav absolute top-0 inset-x-0 flex items-center justify-center h-dvh mx-auto w-full -translate-x-full transition-all duration-[600ms] opacity-0 md:hidden bg-white/50 backdrop-blur"
 				}
 			>
 				<ul className='flex items-center justify-between flex-col gap-4 *:p-4'>
@@ -109,11 +94,11 @@ function Navbar() {
 						className='absolute right-0 top-0 close-xmark'
 						ref={xMarkRef}
 						onClick={() => {
-							console.log('x click');
-							navRef.current.classList.toggle('opacity-0');
-							navRef.current.classList.toggle('-translate-x-full');
-							navRef.current.classList.toggle('translate-x-0');
-							barRef.current.classList.remove('hidden');
+							console.log("x click");
+							navRef.current.classList.toggle("opacity-0");
+							navRef.current.classList.toggle("-translate-x-full");
+							navRef.current.classList.toggle("translate-x-0");
+							barRef.current.classList.remove("hidden");
 						}}
 					>
 						<svg
