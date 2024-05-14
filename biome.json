@@ -1,6 +1,13 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
 	"organizeImports": { "enabled": true },
+	"formatter": { "enabled": true },
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "single",
+			"arrowParentheses": "always"
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -70,11 +77,5 @@
 			}
 		},
 		"ignore": ["dist", ".eslintrc.cjs"]
-	},
-	"javascript": {
-		"formatter": {
-			"jsxQuoteStyle": "single",
-			"arrowParentheses": "always"
-		}
 	}
 }
