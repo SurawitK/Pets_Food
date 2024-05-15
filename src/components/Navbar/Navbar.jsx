@@ -30,7 +30,7 @@ function Navbar() {
 		return (
 			<ul className='ml-auto md:hidden'>
 				<li>
-					<a
+					<button type="button"
 						href='#'
 						className='text-white toggle-nav'
 						ref={barRef}
@@ -42,8 +42,8 @@ function Navbar() {
 							barRef.current.classList.add("hidden");
 						}}
 					>
-						<i className='fa-sharp fa-solid fa-bars'></i>
-					</a>
+						<i className='fa-sharp fa-solid fa-bars'/>
+					</button>
 				</li>
 			</ul>
 		);
@@ -53,27 +53,27 @@ function Navbar() {
 		return (
 			<>
 				<li>
-					<a href='#' className='underline underline-offset-4'>
+					<a href='/' className='underline underline-offset-4'>
 						Home
 					</a>
 				</li>
 				<li>
-					<a href='#' className='hover:underline underline-offset-4'>
+					<a href='/' className='hover:underline underline-offset-4'>
 						Products
 					</a>
 				</li>
 				<li>
-					<a href='#' className='hover:underline underline-offset-4'>
+					<a href='/' className='hover:underline underline-offset-4'>
 						About Us
 					</a>
 				</li>
 				<li>
-					<a href='#' className='hover:underline underline-offset-4'>
+					<a href='/' className='hover:underline underline-offset-4'>
 						Contact
 					</a>
 				</li>
 				<li>
-					<a href='#' className='hover:underline underline-offset-4'>
+					<a href='/' className='hover:underline underline-offset-4'>
 						Sign In
 					</a>
 				</li>
@@ -94,7 +94,16 @@ function Navbar() {
 						className='absolute right-0 top-0 close-xmark'
 						ref={xMarkRef}
 						onClick={() => {
-							console.log("x click");
+							console.log("X Click");
+							navRef.current.classList.toggle("opacity-0");
+							navRef.current.classList.toggle("-translate-x-full");
+							navRef.current.classList.toggle("translate-x-0");
+							barRef.current.classList.remove("hidden");
+						}}
+						onKeyDown={(event) => {
+							if (!event.code === 'Tab') 
+							{ return true }
+							console.log("Tab Press");
 							navRef.current.classList.toggle("opacity-0");
 							navRef.current.classList.toggle("-translate-x-full");
 							navRef.current.classList.toggle("translate-x-0");
@@ -102,6 +111,8 @@ function Navbar() {
 						}}
 					>
 						<svg
+							role="graphics-symbol"
+							aria-label = "close-mobile-navigation"
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
@@ -128,6 +139,8 @@ function Navbar() {
 				<Destinations />
 				<li>
 					<svg
+						role="graphics-symbol"
+						aria-label = "Check Products in Cart"
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
 						viewBox='0 0 24 24'
