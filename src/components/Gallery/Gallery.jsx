@@ -47,6 +47,42 @@ function Gallery() {
         <p>03</p>
       </div>
 			</div>
+
+		<div className="md:grid grid-cols-3 grid-rows-2 gap-4 hidden">
+			<div className="col-span-1 row-span-2">
+				<div className="flex">
+					<div className="flex flex-col object-cover">
+						<img className="grow" src="https://source.unsplash.com/random/400x400/?1" alt="" />
+						<p>01</p>
+					</div>
+				</div>
+			</div>
+			<div className="col-span-1 row-span-2 object-cover">
+				<div className="flex">
+					<div className="flex flex-col">
+						<img src="https://source.unsplash.com/random/400x400/?2" alt="" />
+						<p>02</p>
+					</div>
+				</div>
+			</div>
+			<div className="col-span-1 row-span-1">
+				<div className="flex">
+					<div className="flex flex-col object-cover">
+						<img src="https://source.unsplash.com/random/400x175/?3" alt="" />
+						<p>03</p>
+					</div>
+				</div>
+			</div>
+			<div className="col-span-1 row-span-1 col-start-3">
+				<div className="flex">
+					<div className="flex flex-col object-cover">
+						<img src="https://source.unsplash.com/random/400x175/?4" alt="" />
+						<p>04</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		</section>
 	);
 }
