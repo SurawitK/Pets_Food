@@ -23,13 +23,13 @@ function Hero() {
 					</h2>
 					<div className='flex flex-row *:py-1 *:px-3 *:md:py-4 *:md:px-16 text-sm md:text-xl justify-center ubuntu-mono-bold *:font-bold items-center gap-2 md:gap-4 *:rounded-md text-nowrap uppercase *:transition-all *:duration-500'>
 						<a
-							href='#'
+							href='/'
 							className='bg-transparent text-rose-400 border-solid border-rose-400 border-2 hover:shadow-[0_0_40px_40px_rgb(190,18,60)_inset] hover:border-rose-700 hover:text-white hidden md:block'
 						>
 							view more
 						</a>
 						<a
-							href='#'
+							href='/'
 							className='bg-red-400 text-white border-solid border-rose-400 border-2 hover:bg-rose-700 hover:border-rose-700'
 						>
 							register
