@@ -12,26 +12,27 @@ function Hero() {
 				/>
 				<div className='flex flex-col text-center text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
 					<h1 className='mb-1 lemon min-[500px]:text-3xl lg:text-8xl text-center md:text-5xl md:hidden text-nowrap'>
-						Adopt a pet
+						Cats and Dogs Food
 					</h1>
 					<h1 className='mb-[2rem] lemon lg:text-8xl text-center md:text-5xl md:block hidden text-nowrap'>
-						Adopt a pet
+						Cats and <br />
+						Dogs Food
 					</h1>
 					<h2 className='ml-12 mb-[2rem] ubuntu-mono-regular text-3xl text-gray-800 hidden md:block text-nowrap'>
-						Help us find a home for stray cats and dog
+						Good for Pet, Good for Owner
 					</h2>
 					<div className='flex flex-row *:py-1 *:px-3 *:md:py-4 *:md:px-16 text-sm md:text-xl justify-center ubuntu-mono-bold *:font-bold items-center gap-2 md:gap-4 *:rounded-md text-nowrap uppercase *:transition-all *:duration-500'>
 						<a
-							href='#'
+							href='/'
 							className='bg-transparent text-rose-400 border-solid border-rose-400 border-2 hover:shadow-[0_0_40px_40px_rgb(190,18,60)_inset] hover:border-rose-700 hover:text-white hidden md:block'
 						>
 							view more
 						</a>
 						<a
-							href='#'
+							href='/'
 							className='bg-red-400 text-white border-solid border-rose-400 border-2 hover:bg-rose-700 hover:border-rose-700'
 						>
-							Adopt now
+							register
 						</a>
 					</div>
 				</div>
