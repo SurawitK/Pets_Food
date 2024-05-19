@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 // import { motion } from 'framer-motion';
 
 function Logo() {
@@ -22,15 +22,16 @@ function Logo() {
 }
 
 function Navbar() {
-	const barRef = React.useRef();
-	const navRef = React.useRef();
-	const xMarkRef = React.useRef();
+	const barRef = useRef();
+	const navRef = useRef();
+	const xMarkRef = useRef();
 
 	function Hambergur() {
 		return (
 			<ul className='ml-auto md:hidden'>
 				<li>
-					<button type="button"
+					<button
+						type='button'
 						href='#'
 						className='text-white toggle-nav'
 						ref={barRef}
@@ -42,7 +43,7 @@ function Navbar() {
 							barRef.current.classList.add("hidden");
 						}}
 					>
-						<i className='fa-sharp fa-solid fa-bars'/>
+						<i className='fa-sharp fa-solid fa-bars' />
 					</button>
 				</li>
 			</ul>
@@ -101,8 +102,9 @@ function Navbar() {
 							barRef.current.classList.remove("hidden");
 						}}
 						onKeyDown={(event) => {
-							if (!event.code === 'Tab') 
-							{ return true }
+							if (!event.code === "Tab") {
+								return true;
+							}
 							console.log("Tab Press");
 							navRef.current.classList.toggle("opacity-0");
 							navRef.current.classList.toggle("-translate-x-full");
@@ -111,8 +113,8 @@ function Navbar() {
 						}}
 					>
 						<svg
-							role="graphics-symbol"
-							aria-label = "close-mobile-navigation"
+							role='graphics-symbol'
+							aria-label='close-mobile-navigation'
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
@@ -139,8 +141,8 @@ function Navbar() {
 				<Destinations />
 				<li>
 					<svg
-						role="graphics-symbol"
-						aria-label = "Check Products in Cart"
+						role='graphics-symbol'
+						aria-label='Check Products in Cart'
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
 						viewBox='0 0 24 24'
