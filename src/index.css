@@ -12,11 +12,6 @@
 	}
 
 	img {
-		@apply object-cover rounded-lg w-full;
-	}
-
-	div {
-		@apply rounded-lg;
+		@apply object-cover;
 	}
 }
-
