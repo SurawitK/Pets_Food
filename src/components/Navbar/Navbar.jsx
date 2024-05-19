@@ -12,10 +12,13 @@ function Logo() {
 				<span className='bounce'>e</span>
 				<span className='bounce'>t</span>
 				<span className='bounce'>&nbsp;</span>
-				<span className='bounce'>F</span>
-				<span className='bounce'>o</span>
-				<span className='bounce'>o</span>
-				<span className='bounce'>d</span>
+				<span className='bounce'>S</span>
+				<span className='bounce'>h</span>
+				<span className='bounce'>e</span>
+				<span className='bounce'>l</span>
+				<span className='bounce'>t</span>
+				<span className='bounce'>e</span>
+				<span className='bounce'>r</span>
 			</a>
 		</div>
 	);
@@ -59,7 +62,7 @@ function Navbar() {
 				</li>
 				<li>
 					<a href='/' className='hover:underline underline-offset-4'>
-						Products
+						Adopt
 					</a>
 				</li>
 				<li>

@@ -7,6 +7,7 @@ function Footer() {
 		<div className={styles.abc}>
 			Footer
 			<button
+				type='button'
 				style={{
 					color: "green",
 					padding: "20px",

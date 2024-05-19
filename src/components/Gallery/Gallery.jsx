@@ -4,8 +4,8 @@
 function Intro() {
 	return (
 		<h3 className='uppercase font-bold text-center  md:text-3xl my-8 md:my-24'>
-			<span className='text-sm  md:text-xl'>Check out our</span> <br />{" "}
-			all-natural <span className='font-normal'>products</span>
+			<span className='text-sm  md:text-xl'>Meet </span> <br />{" "}
+			our <span className='font-normal'>animals</span>
 		</h3>
 	);
 }
