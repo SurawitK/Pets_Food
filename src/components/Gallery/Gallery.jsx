@@ -1,6 +1,3 @@
-// import React from "react";
-// import styles from './Gallery.module.css';
-
 function Intro() {
 	return (
 		<h3 className='uppercase font-bold text-center  md:text-3xl my-8 md:my-24'>
