@@ -1,81 +1,129 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
-	"organizeImports": { "enabled": true },
-	"formatter": { "enabled": true },
-	"javascript": {
-		"formatter": {
-			"jsxQuoteStyle": "single",
-			"arrowParentheses": "always"
-		}
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"a11y": { "noBlankTarget": "off" },
-			"complexity": {
-				"noExtraBooleanCast": "error",
-				"noMultipleSpacesInRegularExpressionLiterals": "error",
-				"noUselessCatch": "error",
-				"noWith": "error"
-			},
-			"correctness": {
-				"noChildrenProp": "error",
-				"noConstAssign": "error",
-				"noConstantCondition": "error",
-				"noEmptyCharacterClassInRegex": "error",
-				"noEmptyPattern": "error",
-				"noGlobalObjectCalls": "error",
-				"noInnerDeclarations": "error",
-				"noInvalidConstructorSuper": "error",
-				"noNewSymbol": "error",
-				"noNonoctalDecimalEscape": "error",
-				"noPrecisionLoss": "error",
-				"noSelfAssign": "error",
-				"noSetterReturn": "error",
-				"noSwitchDeclarations": "error",
-				"noUndeclaredVariables": "error",
-				"noUnreachable": "error",
-				"noUnreachableSuper": "error",
-				"noUnsafeFinally": "error",
-				"noUnsafeOptionalChaining": "error",
-				"noUnusedLabels": "error",
-				"noUnusedVariables": "error",
-				"useExhaustiveDependencies": "warn",
-				"useHookAtTopLevel": "error",
-				"useIsNan": "error",
-				"useJsxKeyInIterable": "error",
-				"useValidForDirection": "error",
-				"useYield": "error"
-			},
-			"security": { "noDangerouslySetInnerHtml": "error" },
-			"suspicious": {
-				"noAsyncPromiseExecutor": "error",
-				"noCatchAssign": "error",
-				"noClassAssign": "error",
-				"noCommentText": "error",
-				"noCompareNegZero": "error",
-				"noControlCharactersInRegex": "error",
-				"noDebugger": "error",
-				"noDuplicateCase": "error",
-				"noDuplicateClassMembers": "error",
-				"noDuplicateJsxProps": "error",
-				"noDuplicateObjectKeys": "error",
-				"noDuplicateParameters": "error",
-				"noEmptyBlockStatements": "error",
-				"noFallthroughSwitchClause": "error",
-				"noFunctionAssign": "error",
-				"noGlobalAssign": "error",
-				"noImportAssign": "error",
-				"noMisleadingCharacterClass": "error",
-				"noPrototypeBuiltins": "error",
-				"noRedeclare": "error",
-				"noShadowRestrictedNames": "error",
-				"noUnsafeNegation": "error",
-				"useGetterReturn": "error",
-				"useValidTypeof": "error"
-			}
-		},
-		"ignore": ["dist", ".eslintrc.cjs"]
-	}
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "complexity": {
+        "all": true,
+        "noExtraBooleanCast": "warn",
+        "noMultipleSpacesInRegularExpressionLiterals": "warn",
+        "noUselessLoneBlockStatements": "warn",
+        "noVoid": "warn",
+        "noWith": "warn",
+        "useArrowFunction": "off",
+        "useLiteralKeys": "warn"
+      },
+      "correctness": {
+        "all": true,
+        "noConstAssign": "error",
+        "noConstantCondition": "off",
+        "noEmptyCharacterClassInRegex": "warn",
+        "noGlobalObjectCalls": "warn",
+        "noInnerDeclarations": "off",
+        "noInvalidUseBeforeDeclaration": "off",
+        "noUndeclaredVariables": "error",
+        "noUnreachable": "error",
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "error",
+        "useHookAtTopLevel": "error",
+        "useIsNan": "warn"
+      },
+      "security": { "all": true, "noGlobalEval": "error" },
+      "style": {
+        "all": true,
+        "noCommaOperator": "warn",
+        "noImplicitBoolean": "off",
+        "noUselessElse": "off",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "off",
+        "useSingleVarDeclarator": "off"
+      },
+      "suspicious": {
+        "all": true,
+        "noAssignInExpressions": "warn",
+        "noCatchAssign": "warn",
+        "noCommentText": "error",
+        "noConfusingLabels": "warn",
+        "noConsoleLog": "off",
+        "noControlCharactersInRegex": "warn",
+        "noDebugger": "warn",
+        "noDoubleEquals": "warn",
+        "noDuplicateClassMembers": "error",
+        "noDuplicateJsxProps": "error",
+        "noDuplicateObjectKeys": "error",
+        "noEmptyBlockStatements": "off",
+        "noFallthroughSwitchClause": "warn",
+        "noFocusedTests": "warn",
+        "noFunctionAssign": "warn",
+        "noGlobalAssign": "error",
+        "noLabelVar": "warn",
+        "noRedeclare": "off",
+        "noSelfCompare": "warn",
+        "noShadowRestrictedNames": "warn",
+        "noSkippedTests": "warn",
+        "useValidTypeof": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingComma": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    },
+    "globals": [
+      "clearImmediate",
+      "queueMicrotask",
+      "Blob",
+      "Set",
+      "Promise",
+      "requestIdleCallback",
+      "setImmediate",
+      "requestAnimationFrame",
+      "File",
+      "Map",
+      "__DEV__",
+      "WebSocket"
+    ]
+  },
+  "overrides": [
+    { "include": ["*.js"], "linter": { "rules": {} } },
+    { "include": ["*.jsx"] },
+    {
+      "include": ["*.ts", "*.tsx"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredVariables": "off",
+            "noUnusedVariables": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": [
+        "*.d.ts",
+        "*.{spec,test}.{js,ts,tsx}",
+        "**/__{mocks,tests}__/**/*.{js,ts,tsx}"
+      ],
+      "linter": { "rules": {} }
+    }
+  ]
 }
