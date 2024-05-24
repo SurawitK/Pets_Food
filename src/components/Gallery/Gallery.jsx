@@ -46,11 +46,7 @@ function BigGallery() {
         <div className='flex flex-col object-cover overflow-hidden transition-all'>
           <div className='overflow-hidden grow'>
             <img
-<<<<<<< HEAD
-              className='transition-all hover:scale-105 w-[400px] h-[175px]'
-=======
               className='transition-all hover:scale-105'
->>>>>>> 733da81c8699556530cce030d3f0db597fdb0c8c
               src='cat/cat_toy_1.jpeg'
               alt='Cat Toy'
             />
@@ -63,11 +59,7 @@ function BigGallery() {
         <div className='flex flex-col object-cover overflow-hidden transition-all'>
           <div className='overflow-hidden grow'>
             <img
-<<<<<<< HEAD
-              className='transition-all hover:scale-105 w-[400px] h-[175px]'
-=======
               className='transition-all hover:scale-105'
->>>>>>> 733da81c8699556530cce030d3f0db597fdb0c8c
               src='dog/dog_toy_1.jpeg'
               alt='Dog Toy'
             />
@@ -112,11 +104,7 @@ function Gallery() {
               alt='Cat Snack'
             />
           </div>
-<<<<<<< HEAD
           <div className='ml-4'>
-=======
-          <div class='ml-4'>
->>>>>>> 733da81c8699556530cce030d3f0db597fdb0c8c
             <p className='font-bold'>Cat Snack</p>
             <p className='min-[400px]:hidden'>Kitty needs more tuna</p>
             <p className='max-[400px]:hidden'>
@@ -133,11 +121,7 @@ function Gallery() {
               alt='Cat Toy'
             />
           </div>
-<<<<<<< HEAD
           <div className='ml-4'>
-=======
-          <div class='ml-4'>
->>>>>>> 733da81c8699556530cce030d3f0db597fdb0c8c
             <p className='font-bold'>Cat Toy</p>
             <p className='min-[400px]:hidden'>Whiskers loves catnip mouse</p>
             <p className='max-[400px]:hidden'>
