@@ -1,0 +1,82 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "organizeImports": {
+    "enabled": true,
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true, // default true
+      // "all": true,
+      "complexity": {
+        "all": true,
+        "noVoid": "error",
+        "useSimplifiedLogicExpression": "error",
+        "noExcessiveCognitiveComplexity": "error",
+      },
+      "correctness": {
+        "all": true,
+        "noNewSymbol": "error",
+        "noUnusedImports": "error",
+        "useHookAtTopLevel": "error",
+        "noUndeclaredVariables": "error",
+      },
+      "performance": { "recommended": true },
+      "a11y": { "all": true },
+      "security": {
+        "recommended": true,
+      },
+      "style": {
+        "all": true,
+        "noDefaultExport": "error", // not in recommend
+        "noImplicitBoolean": "error", // not in recommend
+        "noNamespace": "warn", // not in recommend
+        "noNamespaceImport": "warn",
+        "noShoutyConstants": "warn",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": "error",
+        "useShorthandArrayType": "error",
+        "useFilenamingConvention": "warn",
+        "useForOf": "warn",
+        "useShorthandAssign": "warn",
+        "useSingleCaseStatement": "error",
+        "useNamingConvention": "error", // not in recommend
+      },
+      "suspicious": {
+        "recommended": true,
+        // "all": true,
+        "noConsoleLog": "warn",
+        "useAwait": "warn",
+        "noEmptyBlockStatements": "error",
+      },
+    },
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space", //default "tab"
+    "indentWidth": 2, // default 2
+  },
+  "javascript": {
+    // also apply to TS files
+    "formatter": {
+      "quoteStyle": "single", // default "double"
+      "jsxQuoteStyle": "single", // default "double"
+      "trailingComma": "all", //default "all", choose "es5" to add comma only where older browser support.
+      "indentStyle": "space", // default "tab"
+      "indentWidth": 2, // default 2
+      "bracketSameLine": false, // default false
+    },
+  },
+  "json": {
+    "parser": {
+      "allowComments": true, // default false
+      "allowTrailingCommas": true, // default false
+    },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space", // default "tab"
+      "trailingCommas": "all", //default none
+    },
+  },
+}
