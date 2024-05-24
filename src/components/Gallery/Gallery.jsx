@@ -20,6 +20,10 @@ function BigGallery() {
 						/>
 					</div>
 					<p>Dog Food</p>
+					<p className=''>
+						From natural ingredients, appeal to <br /> a wide range of dog
+						breeds and needs.
+					</p>
 				</div>
 			</div>
 			<div className='col-span-1 row-span-2'>
@@ -32,6 +36,10 @@ function BigGallery() {
 						/>
 					</div>
 					<p>Cat Snack</p>
+					<p className=''>
+						From natural ingredients, appeal to <br /> a wide range of cat
+						breeds and needs.
+					</p>
 				</div>
 			</div>
 			<div className='col-span-1 row-span-1'>
@@ -44,6 +52,7 @@ function BigGallery() {
 						/>
 					</div>
 					<p>Cat Toy</p>
+					<p className=''>Toys that are suitable for cats playtime.</p>
 				</div>
 			</div>
 			<div className='col-span-1 row-span-1 col-start-3'>
@@ -56,6 +65,7 @@ function BigGallery() {
 						/>
 					</div>
 					<p>Dog Toy</p>
+					<p className=''>Toys that are suitable for dogs playtime.</p>
 				</div>
 			</div>
 		</div>
@@ -77,9 +87,9 @@ function Gallery() {
 							/>
 						</div>
 						<div className='ml-6'>
-							<p>Dog Food</p>
+							<p className="font-bold">Dog Food</p>
 							<p className=''>
-								From natural ingredients, appeal to <br /> a wide range of dog
+								From natural ingredients, appeal to <br className="min-[400px]:hidden"/> a wide range of dog
 								breeds and needs.
 							</p>
 						</div>
@@ -93,7 +103,16 @@ function Gallery() {
 							alt='Cat Snack'
 						/>
 					</div>
-					<p>Cat Snack</p>
+					<div class="ml-4">
+						<p className="font-bold">Cat Snack</p>
+						<p className='min-[400px]:hidden'>
+							Kitty needs more tuna
+						</p>
+						<p className='max-[400px]:hidden'>
+							From natural ingredients, appeal to a wide range of cat
+							breeds and needs.
+						</p>
+					</div>
 				</div>
 				<div className='row-start-2 row-span-1 '>
 					<div className='bg-white transition-all overflow-hidden '>
@@ -103,7 +122,11 @@ function Gallery() {
 							alt='Cat Toy'
 						/>
 					</div>
-					<p>Cat Toy</p>
+					<div class="ml-4">
+						<p className="font-bold">Cat Toy</p>
+						<p className='min-[400px]:hidden'>Whiskers loves catnip mouse</p>
+						<p className='max-[400px]:hidden'>Toys that are suitable for cats playtime.</p>
+					</div>
 				</div>
 			</div>
 			<BigGallery />
