@@ -43,7 +43,7 @@ function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export { About }
+export { About };

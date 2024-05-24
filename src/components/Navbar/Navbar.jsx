@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef } from 'react';
 // import { motion } from 'framer-motion';
 
 function Logo() {
@@ -18,13 +18,13 @@ function Logo() {
         <span className='bounce'>d</span>
       </a>
     </div>
-  )
+  );
 }
 
 function Navbar() {
-  const barRef = useRef()
-  const navRef = useRef()
-  const xMarkRef = useRef()
+  const barRef = useRef();
+  const navRef = useRef();
+  const xMarkRef = useRef();
 
   function Hambergur() {
     return (
@@ -36,18 +36,18 @@ function Navbar() {
             className='text-white toggle-nav'
             ref={barRef}
             onClick={() => {
-              console.log('bar click')
-              navRef.current.classList.toggle('opacity-0')
-              navRef.current.classList.toggle('-translate-x-full')
-              navRef.current.classList.toggle('translate-x-0')
-              barRef.current.classList.add('hidden')
+              console.log('bar click');
+              navRef.current.classList.toggle('opacity-0');
+              navRef.current.classList.toggle('-translate-x-full');
+              navRef.current.classList.toggle('translate-x-0');
+              barRef.current.classList.add('hidden');
             }}
           >
             <i className='fa-sharp fa-solid fa-bars' />
           </button>
         </li>
       </ul>
-    )
+    );
   }
 
   function Destinations() {
@@ -79,7 +79,7 @@ function Navbar() {
           </a>
         </li>
       </>
-    )
+    );
   }
 
   function MobileNav() {
@@ -95,21 +95,21 @@ function Navbar() {
             className='absolute right-0 top-0 close-xmark'
             ref={xMarkRef}
             onClick={() => {
-              console.log('X Click')
-              navRef.current.classList.toggle('opacity-0')
-              navRef.current.classList.toggle('-translate-x-full')
-              navRef.current.classList.toggle('translate-x-0')
-              barRef.current.classList.remove('hidden')
+              console.log('X Click');
+              navRef.current.classList.toggle('opacity-0');
+              navRef.current.classList.toggle('-translate-x-full');
+              navRef.current.classList.toggle('translate-x-0');
+              barRef.current.classList.remove('hidden');
             }}
-            onKeyDown={event => {
+            onKeyDown={(event) => {
               if (!event.code === 'Tab') {
-                return true
+                return true;
               }
-              console.log('Tab Press')
-              navRef.current.classList.toggle('opacity-0')
-              navRef.current.classList.toggle('-translate-x-full')
-              navRef.current.classList.toggle('translate-x-0')
-              barRef.current.classList.remove('hidden')
+              console.log('Tab Press');
+              navRef.current.classList.toggle('opacity-0');
+              navRef.current.classList.toggle('-translate-x-full');
+              navRef.current.classList.toggle('translate-x-0');
+              barRef.current.classList.remove('hidden');
             }}
           >
             <svg
@@ -132,7 +132,7 @@ function Navbar() {
           <Destinations />
         </ul>
       </nav>
-    )
+    );
   }
 
   function MediumNav() {
@@ -158,7 +158,7 @@ function Navbar() {
           </svg>
         </li>
       </ul>
-    )
+    );
   }
 
   return (
@@ -171,7 +171,7 @@ function Navbar() {
         <MediumNav />
       </nav>
     </header>
-  )
+  );
 }
 
-export { Navbar }
+export { Navbar };

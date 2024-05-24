@@ -1,7 +1,7 @@
 function Intro() {
   return (
-    <h3 className='uppercase font-bold text-center  md:text-3xl my-8 md:my-24'>
-      <span className='text-sm  md:text-xl'>Check out our</span> <br />{' '}
+    <h3 className='my-8 text-center font-bold uppercase md:my-24 md:text-3xl'>
+      <span className='text-sm md:text-xl'>Check out our</span> <br />{' '}
       all-natural <span className='font-normal'>products</span>
     </h3>
   );
@@ -9,7 +9,7 @@ function Intro() {
 
 function BigGallery() {
   return (
-    <div className='md:grid grid-cols-3 grid-rows-2 gap-4 hidden'>
+    <div className='hidden grid-cols-3 grid-rows-2 gap-4 md:grid'>
       <div className='col-span-1 row-span-2'>
         <div className='flex flex-col object-cover overflow-hidden transition-all '>
           <div className='overflow-hidden grow'>

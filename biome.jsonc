@@ -3,18 +3,15 @@
   "organizeImports": {
     "enabled": true
   },
+  "files": {
+    "ignore": ["node_modules", "**/node_modules/**", "dist", "bin"],
+    "ignoreUnknown": true
+  },
   "linter": {
     "enabled": true,
-    "ignore": [
-      "node_modules",
-      "docs",
-      "dist",
-      "public",
-      "**/node_modules/**",
-      "bin"
-    ],
     "rules": {
-      "recommended": true,
+      "recommended": true, // default true
+      // "all": true,
       "complexity": {
         "all": true,
         "noVoid": "error",
@@ -35,9 +32,9 @@
       },
       "style": {
         "all": true,
-        "noDefaultExport": "error",
-        "noImplicitBoolean": "error",
-        "noNamespace": "warn",
+        "noDefaultExport": "error", // not in recommend
+        "noImplicitBoolean": "error", // not in recommend
+        "noNamespace": "warn", // not in recommend
         "noNamespaceImport": "warn",
         "noShoutyConstants": "warn",
         "useBlockStatements": "warn",
@@ -48,50 +45,39 @@
         "useForOf": "warn",
         "useShorthandAssign": "warn",
         "useSingleCaseStatement": "error",
-        "useNamingConvention": "error"
+        "useNamingConvention": "error" // not in recommend
       },
       "suspicious": {
         "recommended": true,
-        "noConsoleLog": "warn",
+        // "all": true,
+        // "noConsoleLog": "warn",
         "useAwait": "warn",
         "noEmptyBlockStatements": "error"
+      },
+      "nursery": {
+        // "all": true,
+        "noConsole": "warn",
+        // "noReactSpecificProps": "error",
+        "noEvolvingAny": "error",
+        "useArrayLiterals": "warn"
+        // "useSortedClasses": "warn"
       }
     }
   },
   "formatter": {
     "enabled": true,
-    "formatWithErrors": false,
-    "indentStyle": "space",
-    "indentWidth": 2,
-    "ignore": [
-      "node_modules",
-      "docs",
-      "dist",
-      "public",
-      "**/node_modules/**",
-      "bin"
-    ]
+    "indentStyle": "space", //default "tab"
+    "indentWidth": 2 // default 2
   },
   "javascript": {
+    // also apply to TS files
     "formatter": {
-      "quoteStyle": "single",
-      "jsxQuoteStyle": "single",
-      "trailingComma": "all",
-      "indentStyle": "space",
-      "indentWidth": 2,
-      "bracketSameLine": false
+      "quoteStyle": "single", // default "double"
+      "jsxQuoteStyle": "single", // default "double"
+      "trailingComma": "all", //default "all", choose "es5" to add comma only where older browser support.
+      "indentStyle": "space", // default "tab"
+      "indentWidth": 2, // default 2
+      "bracketSameLine": false // default false
     }
-  },
-  "files": {
-    "include": [
-      "src/**/*.{ts,tsx,js,jsx}",
-      "lib/**/*.{ts,tsx,js,jsx}",
-      "./biome.json",
-      "./package.json",
-      "./tsconfig.json",
-      "./vite.config.{ts,jx}"
-    ],
-    "ignore": ["node_modules", "**/node_modules/**", "dist", "bin"],
-    "ignoreUnknown": true
   }
 }

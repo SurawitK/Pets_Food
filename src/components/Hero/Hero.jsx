@@ -38,7 +38,7 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export { Hero }
+export { Hero };
