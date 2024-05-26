@@ -1,6 +1,6 @@
 function Intro() {
   return (
-    <h3 className='my-8 text-center font-bold uppercase md:my-24 md:text-3xl'>
+    <h3 className='my-8 container text-center font-bold uppercase md:my-24 md:text-3xl'>
       <span className='text-sm md:text-xl'>Check out our</span> <br />{' '}
       all-natural <span className='font-normal'>products</span>
     </h3>
@@ -9,7 +9,7 @@ function Intro() {
 
 function BigGallery() {
   return (
-    <div className='hidden grid-cols-2 grid-rows-2 gap-4 md:grid'>
+    <div className='hidden container grid-cols-2 grid-rows-2 gap-4 md:grid'>
       <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all '>
           <div className='overflow-hidden grow'>
@@ -19,7 +19,7 @@ function BigGallery() {
               alt='Dog Food'
             />
           </div>
-          <p className="font-bold">Dog Food</p>
+          <p className='font-bold'>Dog Food</p>
           <p className=''>
             From natural ingredients, appeal to <br /> a wide range of dog
             breeds and needs.
@@ -35,7 +35,7 @@ function BigGallery() {
               alt='Cat Snack'
             />
           </div>
-          <p className="font-bold">Cat Snack</p>
+          <p className='font-bold'>Cat Snack</p>
           <p className=''>
             From natural ingredients, appeal to <br /> a wide range of cat
             breeds and needs.
@@ -51,7 +51,7 @@ function BigGallery() {
               alt='Cat Toy'
             />
           </div>
-          <p className="font-bold">Cat Toy</p>
+          <p className='font-bold'>Cat Toy</p>
           <p className=''>Toys that are suitable for cats playtime.</p>
         </div>
       </div>
@@ -64,7 +64,7 @@ function BigGallery() {
               alt='Dog Toy'
             />
           </div>
-          <p className="font-bold">Dog Toy</p>
+          <p className='font-bold'>Dog Toy</p>
           <p className=''>Toys that are suitable for dogs playtime.</p>
         </div>
       </div>
