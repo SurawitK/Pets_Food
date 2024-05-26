@@ -1,6 +1,13 @@
+function SmallAbout(){
+  return (
+    <section >
+    </section>
+  )
+}
+
 function About() {
   return (
-    <section className='bg-slate-100 my-24'>
+    <section className='bg-slate-100 max-s:my-24'>
       <div className='grid grid-cols-2 w-[50%] mx-auto p-20 gap-24'>
         <div className='overflow-hidden rounded-lg'>
           <img
@@ -25,13 +32,14 @@ function About() {
             repellendus ipsam!
           </p>
           <a
-            href='#'
+            href='/'
             className='text-center text-xl font-bold text-white uppercase bg-rose-400 rounded-md px-10 py-4 w-fit hover:bg-rose-700 hover:border-rose-700 transition-all duration-500'
           >
             Discover who we are
           </a>
           <div className='absolute inset-[0_0_auto_auto] inline-block bg-gray-500 p-4 rounded-full w-fit hover:scale-125 transition-all duration-[300ms]'>
             <svg
+              role="graphics-symbol" 
               fill='white'
               className='h-[30px]'
               xmlns='http://www.w3.org/2000/svg'

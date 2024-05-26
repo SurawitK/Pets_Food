@@ -9,8 +9,8 @@ function Intro() {
 
 function BigGallery() {
   return (
-    <div className='hidden grid-cols-3 grid-rows-2 gap-4 md:grid'>
-      <div className='col-span-1 row-span-2'>
+    <div className='hidden grid-cols-2 grid-rows-2 gap-4 md:grid'>
+      <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all '>
           <div className='overflow-hidden grow'>
             <img
@@ -19,14 +19,14 @@ function BigGallery() {
               alt='Dog Food'
             />
           </div>
-          <p>Dog Food</p>
+          <p className="font-bold">Dog Food</p>
           <p className=''>
             From natural ingredients, appeal to <br /> a wide range of dog
             breeds and needs.
           </p>
         </div>
       </div>
-      <div className='col-span-1 row-span-2'>
+      <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all'>
           <div className='overflow-hidden grow'>
             <img
@@ -35,14 +35,14 @@ function BigGallery() {
               alt='Cat Snack'
             />
           </div>
-          <p>Cat Snack</p>
+          <p className="font-bold">Cat Snack</p>
           <p className=''>
             From natural ingredients, appeal to <br /> a wide range of cat
             breeds and needs.
           </p>
         </div>
       </div>
-      <div className='col-span-1 row-span-1'>
+      <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all'>
           <div className='overflow-hidden grow'>
             <img
@@ -51,11 +51,11 @@ function BigGallery() {
               alt='Cat Toy'
             />
           </div>
-          <p>Cat Toy</p>
+          <p className="font-bold">Cat Toy</p>
           <p className=''>Toys that are suitable for cats playtime.</p>
         </div>
       </div>
-      <div className='col-span-1 row-span-1 col-start-3'>
+      <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all'>
           <div className='overflow-hidden grow'>
             <img
@@ -64,7 +64,7 @@ function BigGallery() {
               alt='Dog Toy'
             />
           </div>
-          <p>Dog Toy</p>
+          <p className="font-bold">Dog Toy</p>
           <p className=''>Toys that are suitable for dogs playtime.</p>
         </div>
       </div>
