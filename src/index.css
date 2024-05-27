@@ -12,10 +12,10 @@
 	}
 
 	img {
-		@apply object-cover rounded-lg w-full;
+		@apply object-cover object-center rounded-lg;
 	}
 
-	div {
+	div,section,article {
 		@apply rounded-lg;
 	}
 
