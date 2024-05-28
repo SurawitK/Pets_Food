@@ -12,7 +12,8 @@ export default {
       defaultScreens: ['20rem', theme('screens.lg')],
       // eslint-disable-next-line
       defaultContainers: [, theme('containers.2xl')]
-    }),fontSize,
+    }),
+    fontSize,
     fontFamily: {
       mono: ['Ubuntu Mono', 'monospace'],
       serif: ['Bree Serif', 'serif'],

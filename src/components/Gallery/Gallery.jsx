@@ -1,7 +1,9 @@
 function Intro() {
   return (
-    <h3 className='my-8 container text-center font-bold uppercase md:my-24 md:text-3xl'>
-      <span className='text-sm md:text-xl'>Check out our</span> <br />{' '}
+    // h3 removed md:text-3xl temp.
+    <h3 className='my-8 container text-center font-bold uppercase md:my-24 ~text-base/3xl'>
+    {/* span removed text-sm md:text-xl temp. */}
+      <span className='~text-sm/2xl'>Check out our</span> <br />{' '}
       all-natural <span className='font-normal'>products</span>
     </h3>
   );
@@ -15,7 +17,7 @@ function BigGallery() {
           <div className='overflow-hidden grow'>
             <img
               className='transition-all hover:scale-105'
-              src='dog/dog_food_3.jpeg'
+              src='/dog/dog_food_3.jpeg'
               alt='Dog Food'
             />
           </div>
@@ -31,7 +33,7 @@ function BigGallery() {
           <div className='overflow-hidden grow'>
             <img
               className='transition-all hover:scale-105'
-              src='cat/cat_snack_1.jpeg'
+              src='/cat/cat_snack_1.jpeg'
               alt='Cat Snack'
             />
           </div>
@@ -47,7 +49,7 @@ function BigGallery() {
           <div className='overflow-hidden grow'>
             <img
               className='transition-all hover:scale-105'
-              src='cat/cat_toy_1.jpeg'
+              src='/cat/cat_toy_1.jpeg'
               alt='Cat Toy'
             />
           </div>
@@ -60,7 +62,7 @@ function BigGallery() {
           <div className='overflow-hidden grow'>
             <img
               className='transition-all hover:scale-105'
-              src='dog/dog_toy_1.jpeg'
+              src='/dog/dog_toy_1.jpeg'
               alt='Dog Toy'
             />
           </div>
