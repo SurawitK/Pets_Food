@@ -4,11 +4,19 @@
     "enabled": true
   },
   "files": {
-    "ignore": ["node_modules", "**/node_modules/**", "dist", "bin"],
+    "ignore": [
+      "node_modules",
+      "**/node_modules/**",
+      "dist",
+      "bin"
+    ],
     "ignoreUnknown": true
   },
   "linter": {
     "enabled": true,
+    "ignore": [
+      "**config"
+    ],
     "rules": {
       "recommended": true, // default true
       // "all": true,
@@ -25,8 +33,12 @@
         "useHookAtTopLevel": "error",
         "noUndeclaredVariables": "error"
       },
-      "performance": { "recommended": true },
-      "a11y": { "all": true },
+      "performance": {
+        "recommended": true
+      },
+      "a11y": {
+        "all": true
+      },
       "security": {
         "recommended": true
       },
