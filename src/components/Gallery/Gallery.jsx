@@ -2,9 +2,9 @@ function Intro() {
   return (
     // h3 removed md:text-3xl temp.
     <h3 className='my-8 container text-center font-bold uppercase md:my-24 ~text-base/3xl'>
-    {/* span removed text-sm md:text-xl temp. */}
-      <span className='~text-sm/2xl'>Check out our</span> <br />{' '}
-      all-natural <span className='font-normal'>products</span>
+      {/* span removed text-sm md:text-xl temp. */}
+      <span className='~text-sm/2xl'>Check out our</span> <br /> all-natural{' '}
+      <span className='font-normal'>products</span>
     </h3>
   );
 }

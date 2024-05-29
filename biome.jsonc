@@ -15,7 +15,7 @@
   "linter": {
     "enabled": true,
     "ignore": [
-      "**config"
+      "*config*.*"
     ],
     "rules": {
       "recommended": true, // default true

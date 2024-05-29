@@ -1,7 +1,7 @@
 function SmallAbout() {
   return (
     <section className='bg-slate-100 my-24 container mx-auto overflow-hidden rounded-none'>
-    {/* 1000vw use 450px  */}
+      {/* 1000vw use 450px  */}
       <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center auto-rows-fr'>
         <div className='overflow-hidden rounded-none mx-auto w-full h-full'>
           <img

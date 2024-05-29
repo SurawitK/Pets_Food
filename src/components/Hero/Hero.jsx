@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className='pt-6 md:pt-0'>
       <div className='relative mt-10 md:mt-12 2xl:-mt-60 min-[2560px]:-mt-48'>
-      {/* img removed h-[50dvh] temp. */}
+        {/* img removed h-[50dvh] temp. */}
         <img
           className='md:h-full w-full mx-auto'
           src='https://images.unsplash.com/photo-1597633611385-17238892d086?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
