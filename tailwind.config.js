@@ -10,8 +10,7 @@ export default {
     /** @type {import('fluid-tailwind').FluidThemeConfig} */
     fluid: ({ theme }) => ({
       defaultScreens: ['20rem', theme('screens.lg')],
-      // eslint-disable-next-line
-      defaultContainers: [, theme('containers.2xl')]
+      defaultContainers: [, theme('containers.2xl')],
     }),
     fontSize,
     fontFamily: {
