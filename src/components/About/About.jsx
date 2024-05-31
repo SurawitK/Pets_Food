@@ -1,8 +1,8 @@
 function SmallAbout() {
   return (
-    <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none md:hidden'>
+    <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none'>
       {/* 1000vw use 450px  */}
-      <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center'>
+      <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center md:hidden'>
         <div className='ml-2'>
           <h3 className='text-2xl font-bold uppercase underline decoration-pink-500 decoration-wavy decoration-2'>
             about us
@@ -33,14 +33,14 @@ function SmallAbout() {
           </a>
         </div>
       </div>
+    <BigAbout/>
     </section>
   );
 }
 
 function BigAbout() {
   return (
-    <section className='bg-slate-100 my-24 container'>
-      <div className='grid grid-cols-2 w-[50%] mx-auto p-20 gap-24'>
+      <div className='md:grid grid-cols-2 w-[75%] mx-auto md:p-4 gap-24 hidden'>
         <div className='overflow-hidden rounded-lg'>
           <img
             className='w-[350px] rounded-lg hover:scale-[115%] overflow-hidden transition-all'
@@ -65,7 +65,7 @@ function BigAbout() {
           </p>
           <a
             href='/'
-            className='text-center text-xl font-bold text-white uppercase bg-rose-400 rounded-md px-10 py-4 w-fit hover:bg-rose-700 hover:border-rose-700 transition-all duration-500'
+            className='text-nowrap text-center text-xl font-bold text-white uppercase bg-rose-400 rounded-md px-10 py-4 w-fit hover:bg-rose-700 hover:border-rose-700 transition-all duration-500'
           >
             Discover who we are
           </a>
@@ -82,12 +82,13 @@ function BigAbout() {
           </div>
         </div>
       </div>
-    </section>
   );
 }
 
 function About() {
-  return <SmallAbout />;
+  return (
+  <SmallAbout />
+);
 }
 
 export { About };

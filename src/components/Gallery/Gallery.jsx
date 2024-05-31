@@ -11,7 +11,7 @@ function Intro() {
 
 function BigGallery() {
   return (
-    <div className='hidden container grid-cols-2 grid-rows-2 gap-4 md:grid'>
+    <div className='hidden container grid-cols-2 grid-rows-2 gap-4 md:grid w-[800px] mx-auto'>
       <div className=''>
         <div className='flex flex-col object-cover overflow-hidden transition-all '>
           <div className='overflow-hidden grow'>
@@ -76,7 +76,7 @@ function BigGallery() {
 
 function Gallery() {
   return (
-    <section className='container mx-auto mt-8 my-4 md:my-24'>
+    <section className='container mx-auto my-8 md:my-24'>
       <Intro />
       <div className='grid grid-cols-2 gap-4 auto-rows-auto md:hidden '>
         <div className='col-span-full grid grid-cols-subgrid overflow-hidden '>
