@@ -87,12 +87,7 @@ function BigAbout() {
 }
 
 function About() {
-  return (
-    <>
-      <SmallAbout />
-      <p>Hello world</p>
-    </>
-  );
+  return <SmallAbout />;
 }
 
 export { About };
