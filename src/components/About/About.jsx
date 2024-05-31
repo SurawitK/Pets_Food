@@ -3,15 +3,14 @@ function SmallAbout() {
     <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none md:hidden'>
       {/* 1000vw use 450px  */}
       <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center'>
-      <div className='ml-2'>
+        <div className='ml-2'>
           <h3 className='text-2xl font-bold uppercase underline decoration-pink-500 decoration-wavy decoration-2'>
-              about us
-            </h3>
-            <h2 className='text-4xl font-bold uppercase'>
-              proudly raised,
-              grown &amp; produced
-              <span className='text-red-700'> in thailand</span>
-            </h2>
+            about us
+          </h3>
+          <h2 className='text-4xl font-bold uppercase'>
+            proudly raised, grown &amp; produced
+            <span className='text-red-700'> in thailand</span>
+          </h2>
         </div>
         <div className='overflow-hidden rounded-lg mx-auto w-full'>
           <img
@@ -89,7 +88,10 @@ function BigAbout() {
 
 function About() {
   return (
-    <SmallAbout/>
+    <>
+      <SmallAbout />
+      <p>Hello world</p>
+    </>
   );
 }
 
