@@ -76,7 +76,7 @@ function BigGallery() {
 
 function Gallery() {
   return (
-    <section className='container mx-auto my-8 md:my-24'>
+    <section className='container mx-auto mt-8 my-4 md:my-24'>
       <Intro />
       <div className='grid grid-cols-2 gap-4 auto-rows-fr md:hidden '>
         <div className='col-span-full grid grid-cols-subgrid overflow-hidden '>
