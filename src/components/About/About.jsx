@@ -1,6 +1,6 @@
 function SmallAbout() {
   return (
-    <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none'>
+    <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none relative'>
       {/* 1000vw use 450px  */}
       <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center md:hidden'>
         <div className='ml-2'>
@@ -40,15 +40,15 @@ function SmallAbout() {
 
 function BigAbout() {
   return (
-      <div className='md:grid grid-cols-2 w-[75%] mx-auto md:p-4 gap-24 hidden'>
+      <div className='md:grid grid-cols-2 w-[75%] lg:h-[600px] mx-auto md:p-4 gap-24 md:gap-16 hidden'>
         <div className='overflow-hidden rounded-lg'>
           <img
-            className='w-[350px] rounded-lg hover:scale-[115%] overflow-hidden transition-all'
+            className='w-[350px] md:w-full rounded-lg hover:scale-[115%] overflow-hidden transition-all lg:scale-[115%] lg:hover:scale-[120%]'
             src='https://images.unsplash.com/photo-1561948955-570b270e7c36?q=80&w=2701&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             alt='Cat Face'
           />
         </div>
-        <div className='grid content-center relative'>
+        <div className='grid content-center relative md:max-lg:static'>
           <h3 className='text-2xl font-bold uppercase underline decoration-pink-500 decoration-wavy decoration-2'>
             about us
           </h3>
@@ -69,11 +69,11 @@ function BigAbout() {
           >
             Discover who we are
           </a>
-          <div className='absolute inset-[0_0_auto_auto] inline-block bg-gray-500 p-4 rounded-full w-fit hover:scale-125 transition-all duration-[300ms]'>
+          <div className='absolute md:max-lg:inset-[1rem_1rem_auto_auto] inset-[0_0_auto_auto] inline-block bg-gray-500 p-4 rounded-full w-fit hover:scale-125 transition-all duration-[300ms]'>
             <svg
               role='graphics-symbol'
               fill='white'
-              className='h-[30px]'
+              className='h-[30px] md:max-lg:h-[20px] '
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 512 512'
             >
