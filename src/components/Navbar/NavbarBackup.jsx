@@ -3,10 +3,10 @@ import React from 'react';
 
 function Logo() {
   return (
-    <div className='text-wrapper relative text-nowrap'>
+    <div className='relative text-nowrap text-wrapper'>
       <a
         href='/Pet_Food/index.html'
-        className='font-serif text-white text-2xl *:font-lemon'
+        className='font-serif text-2xl text-white *:font-lemon'
       >
         <span className='bounce'>P</span>
         <span className='bounce'>e</span>
@@ -32,17 +32,16 @@ function Navbar() {
         <li>
           <a
             href='#'
-            className='text-white toggle-nav'
+            className='toggle-nav text-white'
             ref={barRef}
             onClick={() => {
-              console.log('bar click');
               navRef.current.classList.toggle('opacity-0');
               navRef.current.classList.toggle('-translate-x-full');
               navRef.current.classList.toggle('translate-x-0');
               barRef.current.classList.add('hidden');
             }}
           >
-            <i className='fa-sharp fa-solid fa-bars'></i>
+            <i className='fa-sharp fa-solid fa-bars' />
           </a>
         </li>
       </ul>
@@ -58,22 +57,22 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline underline-offset-4'>
+          <a href='#' className='underline-offset-4 hover:underline'>
             Products
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline underline-offset-4'>
+          <a href='#' className='underline-offset-4 hover:underline'>
             About Us
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline underline-offset-4'>
+          <a href='#' className='underline-offset-4 hover:underline'>
             Contact
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline underline-offset-4'>
+          <a href='#' className='underline-offset-4 hover:underline'>
             Sign In
           </a>
         </li>
@@ -86,15 +85,14 @@ function Navbar() {
       <nav
         ref={navRef}
         className={
-          'mobile-nav absolute top-0 inset-x-0 flex items-center justify-center h-dvh mx-auto w-full -translate-x-full transition-all duration-[600ms] opacity-0 md:hidden bg-white/50 backdrop-blur'
+          'mobile-nav -translate-x-full absolute inset-x-0 top-0 mx-auto flex h-dvh w-full items-center justify-center bg-white/50 opacity-0 backdrop-blur transition-all duration-[600ms] md:hidden'
         }
       >
-        <ul className='flex items-center justify-between flex-col gap-4 *:p-4'>
+        <ul className='flex flex-col items-center justify-between gap-4 *:p-4'>
           <div
-            className='absolute right-0 top-0 close-xmark'
+            className='close-xmark absolute top-0 right-0'
             ref={xMarkRef}
             onClick={() => {
-              console.log('x click');
               navRef.current.classList.toggle('opacity-0');
               navRef.current.classList.toggle('-translate-x-full');
               navRef.current.classList.toggle('translate-x-0');
@@ -107,7 +105,7 @@ function Navbar() {
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               stroke='currentColor'
-              className='size-8 hover:opacity-50 transition hover:-translate-y-1'
+              className='hover:-translate-y-1 size-8 transition hover:opacity-50'
             >
               <path
                 strokeLinecap='round'
@@ -124,7 +122,7 @@ function Navbar() {
 
   function MediumNav() {
     return (
-      <ul className='hidden md:flex gap-8 md:gap-8 text-white justify-center items-center text-nowrap font-mono text-lg md:text-base ml-auto min-[2560px]:ml-0'>
+      <ul className='ml-auto hidden items-center justify-center gap-8 text-nowrap font-mono text-lg text-white min-[2560px]:ml-0 md:flex md:gap-8 md:text-base'>
         <Destinations />
         <li>
           <svg
@@ -133,7 +131,7 @@ function Navbar() {
             viewBox='0 0 24 24'
             strokeWidth='1.5'
             stroke='currentColor'
-            className='md:w-6 md:h-6 hover:scale-125 transition-all'
+            className='transition-all md:h-6 md:w-6 hover:scale-125'
           >
             <path
               strokeLinecap='round'
@@ -147,9 +145,9 @@ function Navbar() {
   }
 
   return (
-    <header className='nav-wrapper fixed top-0 left-0 right-0 z-10'>
+    <header className='nav-wrapper fixed top-0 right-0 left-0 z-10'>
       {/* <!-- 2xl should become 1 row and span all --> */}
-      <nav className='grid grid-cols-2 min-w-[300px] md:grid-cols-[0.5fr_1fr] min-[2560px]:grid-cols-2 px-8 md:px-4 py-4 items-center bg-rose-400 min-[2560px]:px-96 min-[2560px]:justify-items-center md:justify-between md:gap-4 relative z-10'>
+      <nav className='relative z-10 grid min-w-[300px] grid-cols-2 items-center bg-rose-400 px-8 py-4 md:grid-cols-[0.5fr_1fr] min-[2560px]:grid-cols-2 md:justify-between min-[2560px]:justify-items-center md:gap-4 md:px-4 min-[2560px]:px-96'>
         <Logo />
         <Hambergur />
         <MobileNav />

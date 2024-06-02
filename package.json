@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "sort": "npx @biomejs/biome check --apply-unsafe ./src",
     "preview": "vite preview"
   },
   "dependencies": {
