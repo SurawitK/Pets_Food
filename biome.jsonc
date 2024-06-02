@@ -71,8 +71,8 @@
         "noConsole": "warn",
         // "noReactSpecificProps": "error",
         "noEvolvingAny": "error",
-        "useArrayLiterals": "warn"
-        // "useSortedClasses": "warn"
+        "useArrayLiterals": "warn",
+        "useSortedClasses": "warn"
       }
     }
   },

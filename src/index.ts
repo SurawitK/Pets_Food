@@ -3,5 +3,3 @@ function echo<T extends number | boolean>(value: T): T {
 }
 
 echo(1); // valid
-
-console.log('hello');

@@ -1,5 +1,6 @@
 function SmallAbout() {
   return (
+<<<<<<< HEAD
     <section className='bg-slate-100 container mx-auto overflow-hidden rounded-none relative'>
       {/* 1000vw use 450px  */}
       <div className='grid overflow-hidden grid-cols-1 mx-auto justify-center md:hidden'>
@@ -32,14 +33,46 @@ function SmallAbout() {
             Discover who we are
           </a>
         </div>
+=======
+    // 1000vw use 450px
+    <div className='mx-auto grid grid-cols-1 justify-center overflow-hidden md:hidden'>
+      <div className='ml-2'>
+        <h3 className='font-bold text-2xl uppercase underline decoration-2 decoration-pink-500 decoration-wavy'>
+          about us
+        </h3>
+        <h2 className='font-bold text-4xl uppercase'>
+          proudly raised, grown &amp; produced
+          <span className='text-red-700'> in thailand</span>
+        </h2>
+>>>>>>> 64c0a22f22c30e775f61db8ae944df2f21714b42
       </div>
-      <BigAbout />
-    </section>
+      <div className='mx-auto w-full overflow-hidden rounded-lg'>
+        <img
+          className='w-full rounded-lg transition-all hover:scale-[105%]'
+          src='https://images.unsplash.com/photo-1561948955-570b270e7c36?q=80&w=2701&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='White fur cat doing funny face, its mouth open ajar and its yellow eyes with black iris inside open wide as if it has been caught by surprise.'
+        />
+      </div>
+      <div className='ml-2 grid grid-cols-subgrid content-center'>
+        <p className='my-4'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+          possimus voluptates debitis eum doloribus totam ut numquam vero
+          repellendus ipsam!
+        </p>
+        <a
+          href='/'
+          className='w-fit rounded-md bg-rose-400 px-10 py-4 text-center font-bold text-white text-xl uppercase transition-all duration-500 hover:border-rose-700 hover:bg-rose-700'
+        >
+          Discover who we are
+        </a>
+      </div>
+    </div>
   );
 }
 
 function BigAbout() {
   return (
+<<<<<<< HEAD
       <div className='md:grid grid-cols-2 w-[75%] lg:h-[600px] mx-auto md:p-4 gap-24 md:gap-16 hidden'>
         <div className='overflow-hidden rounded-lg'>
           <img
@@ -66,6 +99,45 @@ function BigAbout() {
           <a
             href='/'
             className='text-nowrap text-center text-xl font-bold text-white uppercase bg-rose-400 rounded-md px-10 py-4 w-fit hover:bg-rose-700 hover:border-rose-700 transition-all duration-500'
+=======
+    //todo: Fix layout shift later
+    <div className='mx-auto hidden w-[75%] grid-cols-2 gap-24 transition-all md:grid md:p-4'>
+      <div className='overflow-hidden rounded-lg'>
+        <img
+          className='w-[350px] overflow-hidden rounded-lg transition-all hover:scale-[115%]'
+          src='https://images.unsplash.com/photo-1561948955-570b270e7c36?q=80&w=2701&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='Cat Face'
+        />
+      </div>
+      <div className='relative grid content-center'>
+        <h3 className='font-bold text-2xl uppercase underline decoration-2 decoration-pink-500 decoration-wavy'>
+          about us
+        </h3>
+        <h2 className='font-bold text-4xl uppercase'>
+          proudly raised,
+          <br />
+          grown &amp; produced <br />
+          <span className='text-red-700'>in thailand</span>
+        </h2>
+        <p className='my-8'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+          possimus voluptates debitis eum doloribus totam ut numquam vero
+          repellendus ipsam!
+        </p>
+        <a
+          href='/'
+          className='w-fit text-nowrap rounded-md bg-rose-400 px-10 py-4 text-center font-bold text-white text-xl uppercase transition-all duration-500 hover:border-rose-700 hover:bg-rose-700'
+        >
+          Discover who we are
+        </a>
+        <div className='absolute inset-[0_0_auto_auto] inline-block w-fit rounded-full bg-gray-500 p-4 transition-all duration-[300ms] hover:scale-125'>
+          <svg
+            role='graphics-symbol'
+            fill='white'
+            className='h-[30px]'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 512 512'
+>>>>>>> 64c0a22f22c30e775f61db8ae944df2f21714b42
           >
             Discover who we are
           </a>
@@ -86,7 +158,16 @@ function BigAbout() {
 }
 
 function About() {
+<<<<<<< HEAD
   return (<SmallAbout />);
+=======
+  return (
+    <section className='container mx-auto overflow-hidden rounded-none bg-slate-100'>
+      <SmallAbout />
+      <BigAbout />
+    </section>
+  );
+>>>>>>> 64c0a22f22c30e775f61db8ae944df2f21714b42
 }
 
 export { About };

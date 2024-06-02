@@ -1,7 +1,7 @@
 function Intro() {
   return (
     // h3 removed md:text-3xl temp.
-    <h3 className='my-8 container text-center font-bold uppercase md:my-24 ~text-base/3xl'>
+    <h3 className='~text-base/3xl container my-8 text-center font-bold uppercase md:my-24'>
       {/* span removed text-sm md:text-xl temp. */}
       <span className='~text-sm/2xl'>Check out our</span> <br /> all-natural{' '}
       <span className='font-normal'>products</span>
@@ -11,10 +11,10 @@ function Intro() {
 
 function BigGallery() {
   return (
-    <div className='hidden container grid-cols-2 grid-rows-2 gap-4 md:grid w-[800px] mx-auto'>
+    <div className='container mx-auto hidden w-[800px] grid-cols-2 grid-rows-2 gap-4 md:grid'>
       <div className=''>
-        <div className='flex flex-col object-cover overflow-hidden transition-all '>
-          <div className='overflow-hidden grow'>
+        <div className='flex flex-col overflow-hidden object-cover transition-all'>
+          <div className='grow overflow-hidden'>
             <img
               className='transition-all hover:scale-105'
               src='/dog/dog_food_3.jpeg'
@@ -29,8 +29,8 @@ function BigGallery() {
         </div>
       </div>
       <div className=''>
-        <div className='flex flex-col object-cover overflow-hidden transition-all'>
-          <div className='overflow-hidden grow'>
+        <div className='flex flex-col overflow-hidden object-cover transition-all'>
+          <div className='grow overflow-hidden'>
             <img
               className='transition-all hover:scale-105'
               src='/cat/cat_snack_1.jpeg'
@@ -45,8 +45,8 @@ function BigGallery() {
         </div>
       </div>
       <div className=''>
-        <div className='flex flex-col object-cover overflow-hidden transition-all'>
-          <div className='overflow-hidden grow'>
+        <div className='flex flex-col overflow-hidden object-cover transition-all'>
+          <div className='grow overflow-hidden'>
             <img
               className='transition-all hover:scale-105'
               src='/cat/cat_toy_1.jpeg'
@@ -58,8 +58,8 @@ function BigGallery() {
         </div>
       </div>
       <div className=''>
-        <div className='flex flex-col object-cover overflow-hidden transition-all'>
-          <div className='overflow-hidden grow'>
+        <div className='flex flex-col overflow-hidden object-cover transition-all'>
+          <div className='grow overflow-hidden'>
             <img
               className='transition-all hover:scale-105'
               src='/dog/dog_toy_1.jpeg'
@@ -78,12 +78,12 @@ function Gallery() {
   return (
     <section className='container mx-auto my-8 md:my-24'>
       <Intro />
-      <div className='grid grid-cols-2 gap-4 auto-rows-auto md:hidden '>
-        <div className='col-span-full grid grid-cols-subgrid overflow-hidden '>
-          <div className='flex flex-col bg-white col-span-full overflow-hidden'>
+      <div className='grid auto-rows-auto grid-cols-2 gap-4 md:hidden'>
+        <div className='col-span-full grid grid-cols-subgrid overflow-hidden'>
+          <div className='col-span-full flex flex-col overflow-hidden bg-white'>
             <div className='overflow-hidden'>
               <img
-                className='hover:scale-105 object-cover transition-all object-bottom min-[340px]:object-center min-[340px]:pb-[30px]'
+                className='object-cover object-bottom transition-all hover:scale-105 min-[340px]:object-center min-[340px]:pb-[30px]'
                 src='/dog/dog_food_3.jpeg'
                 alt='Dog Food'
               />
@@ -98,10 +98,10 @@ function Gallery() {
             </div>
           </div>
         </div>
-        <div className='row-start-2 row-span-1'>
-          <div className='bg-white transition-all overflow-hidden'>
+        <div className='row-span-1 row-start-2'>
+          <div className='overflow-hidden bg-white transition-all'>
             <img
-              className='overflow-hidden  hover:scale-110 transition-all w-full'
+              className='w-full overflow-hidden transition-all hover:scale-110'
               src='/cat/cat_snack_1.jpeg'
               alt='Cat Snack'
             />
@@ -115,10 +115,10 @@ function Gallery() {
             </p>
           </div>
         </div>
-        <div className='row-start-2 row-span-1 '>
-          <div className='bg-white transition-all overflow-hidden '>
+        <div className='row-span-1 row-start-2'>
+          <div className='overflow-hidden bg-white transition-all'>
             <img
-              className='overflow-hidden  hover:scale-110 transition-all w-full'
+              className='w-full overflow-hidden transition-all hover:scale-110'
               src='/cat/cat_toy_1.jpeg'
               alt='Cat Toy'
             />
