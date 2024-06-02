@@ -69,9 +69,9 @@ function BigAbout() {
         </a>
         <div className='absolute inset-[0_0_auto_auto] inline-block w-fit rounded-full bg-gray-500 p-4 transition-all duration-[300ms] hover:scale-125'>
           <svg
+            className='h-[30px]'
             role='graphics-symbol'
             fill='white'
-            className='h-[30px]'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
           >
