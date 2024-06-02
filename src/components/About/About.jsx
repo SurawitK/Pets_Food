@@ -33,7 +33,7 @@ function SmallAbout() {
           </a>
         </div>
       </div>
-    <BigAbout/>
+      <BigAbout />
     </section>
   );
 }
@@ -86,9 +86,7 @@ function BigAbout() {
 }
 
 function About() {
-  return (
-  <SmallAbout />
-);
+  return (<SmallAbout />);
 }
 
 export { About };
